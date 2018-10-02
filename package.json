@@ -1,0 +1,29 @@
+{
+  "name": "mountain-data",
+  "version": "1.0.0",
+  "description": "国土地理院の日本の山データが超絶見づらいのでJSONに変換して配布する",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:pretty && npm run build:min",
+    "build:pretty": "node index > dist/mountains.json",
+    "build:min": "node index min > dist/mountains.min.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyabisun/mountain-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miyabisun/mountain-data/issues"
+  },
+  "homepage": "https://github.com/miyabisun/mountain-data#readme",
+  "dependencies": {
+    "encoding-japanese": "^1.0.29",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
